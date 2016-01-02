@@ -38,7 +38,7 @@ class Intersection(wx.Frame):
 	def update(self):
 		image = wx.Image(light, wx.BITMAP_TYPE_PNG) 
 		self.temp = image.ConvertToBitmap()
-		wx.StaticBitmap(parent=self.panel, bitmap=self.temp) 
+		wx.StaticBitmap(parent=self.panel, bitmap=self.temp, pos=100) 
 		
 	def BtnClick(self,event):
 		global thread_state, light
